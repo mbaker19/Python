@@ -1,0 +1,17 @@
+def data():
+
+add= 0
+go= True
+new= []
+
+while go:
+    try:
+        h= int(input('Enter number: '))
+        new.append(h)
+    except:
+        for i in new:
+            add += i
+            
+add= (add, new, add/ len(new))
+return list(add)
+        
