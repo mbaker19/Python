@@ -1,0 +1,23 @@
+from tkinter import *
+from tkinter message.box import *
+
+def Access():
+    import webbrowser
+    if askyesorno("Do you want to access the web?")
+        showwarning("Ok, be prepared.")
+        url= "http://google.com";
+        webbrowser.open(url)
+        sys.exit()
+    else:
+        showinfo("alright then.")
+        sys.exit()
+        
+root= Tk()
+button= Button(root)
+root.title("Web Applicator")
+root.geometry('300x200')
+button.config(text= "Web Access")
+button.config(command= Access)
+button.pack(side= TOP, expand= YES)
+
+root.mainloop()
